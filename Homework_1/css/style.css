@@ -1,13 +1,12 @@
 .line{
-  border-bottom: 1px solid gray
+  border-bottom: 1px solid gray;
 }
 .wrapper{
   height: 900px;
   width: 600px;
   margin: 0 auto;
-  background-color: "#f0f0f0";
-  font-family: Arial sans-serif;;
-}
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
 }
 .header{
   padding-left: 50px;
