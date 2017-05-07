@@ -1,0 +1,170 @@
+/*newfont_add and background*/
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(../fonts/HelveticaNeueCyr-Light.otf );
+}
+html {
+    width: 1366px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/background.png");
+    font-family: HelveticaNeue, sans-serif;
+}
+/*Header*/
+.header {
+    overflow: hidden;
+    height: 36px;
+    background-color: #075190;
+}
+.header ul {
+    float: right;
+}
+a {
+    color: #53a3db;
+    text-decoration: none;
+}
+.header li {
+    display: inline-block;
+    padding: 10px 10px 10px 6px;
+    margin-right: 4px;
+    margin-bottom: -7px;
+}
+.header a:hover {
+    color: white;
+}
+.column a {
+    color: white;
+    text-decoration: underline;
+}
+.header li:last-child:hover {
+    background:#4eabda;
+}
+.header li:nth-child(2):hover {
+    background:#4eabda;
+}
+.header li:nth-child(3):hover {
+    background:#4eabda;
+}
+.header li:nth-child(4):hover {
+    background:#4eabda;
+}
+.header li:nth-child(5):hover {
+    background:#4eabda;
+}
+.header li:last-child {
+    background:#4eabda;
+}
+
+/*Header/Ajuda_right_border*/
+.border {
+    height: 16px;
+    padding-top: 9px;
+    padding-right: 25px;
+    border-right: 1px solid #3c8ac4;
+}
+/*Header/Ajuda_right_border*/
+.flag {
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+.column {
+    color: #ffffff
+}
+.column span {
+    text-decoration: underline;
+}
+/*Central_panel*/
+.central_panel {
+    width: 501px;
+    height: 570px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    text-align: center;
+    background-color: rgba(4, 4, 4, 0.57);
+}
+.central_panel h1 {
+    padding: 20px;
+    border-bottom: 2px solid #ced3bf;
+    font-size: 23px;
+    color: #ffffff;
+}
+.login{
+    background-image: url(../img/facebook.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 30px 0;
+    text-align: center;
+}
+.central_panel h4{
+    color: #999999;
+    text-align: center;
+    background-image: url(../img/line.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/*Form_account*/
+.account {
+    background-image: none;
+    padding: 0;
+}
+.account input {
+    margin-top: 16px;
+    padding: 0;
+    background-image: none;
+    text-align: center;
+}
+input {
+    width: 272px;
+    height: 33px;
+    background: #0f0e0e;
+    border: none;
+}
+input[type=checkbox] {
+    width:13px;
+    height:13px;
+}
+label {
+    color: gray;
+}
+input[placeholder] {
+    font-family: "Helvetica Neue Regular", Tahoma, Arial, sans-serif;
+    color: gray;
+    padding-left: 20px;
+    padding-top: 7px;
+    text-align: left;
+    border-bottom: 1px solid;
+}
+input:focus{
+    background: #074b87;
+    box-shadow: 0px 0px 20px 5px rgba(115,154,193,1);
+}
+input[type="submit"] {
+    font-family: "Helvetica Neue Regular", Tahoma, Arial, sans-serif;
+    background-image: url(../img/button.png);
+    box-shadow: none;
+    width: 272px;
+    height: 33px;
+    border-radius: 5px;
+    color: white;
+    opacity: 0;
+}
+.account input[type="submit"]{
+    width: 150px;
+    opacity: 1;
+}
+.privacy {
+    margin: 0;
+    padding-bottom: 20px;
+}
+.privacy p {
+    text-align: center;
+    color: #cccccc;
+    font-size: 11px;
+    line-height: 15px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.create_bottom {
+    padding-bottom: 20px;
+}
