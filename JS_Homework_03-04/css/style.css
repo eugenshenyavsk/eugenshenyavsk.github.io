@@ -1,0 +1,41 @@
+body {
+    font-family: Tahoma;
+    background: #ECF5F6;
+}
+
+.mainWrapper {
+    display: block;
+    width: 800px;
+    margin: 30px auto;
+    background: white;
+    border: 1px solid white;
+}
+.mainH1 {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+}
+.mainForm {
+    margin-top: 20px;
+}
+.pInForm {
+    font-size: 18px;
+    margin-left: 100px;
+    padding-top: 10px;
+}
+.checkbox {
+    margin-top: 5px;
+    margin-left: 120px;
+}
+.textLabel{
+    padding-left: 8px;
+    font-size: 15px;
+}
+.buttonForm{
+    display: block;
+    margin: 30px 0 30px 255px;
+    font-size: 18px;
+    width: 325px;
+    height: 50px;
+}
