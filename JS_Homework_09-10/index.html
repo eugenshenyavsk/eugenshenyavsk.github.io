@@ -2,121 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home Work JS 9-10</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <title>Sweden</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+    </script>
+    <script src="js/jquery.carousel.js"></script>
+    <script src="js/jquery.selectBox.js"></script>
+    <script src="js/jquery.checkbox.js"></script>
+    <script src="js/jquery.jqueyColor.js"></script>
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
-
-
+    <link rel="stylesheet" href="css/jquery.selectBox.css"/>
 </head>
 <body>
-
-<header>
-    <div class="container">
-        <div class="logo">
-            <img src="img/logo.png" alt="logo">
-            <span>Good Inc.</span>
-        </div>
-    </div>
-</header>
-
-<nav>
-    <div class="container">
-        <ul class="menu">
-            <li class="menu--item"><a href="#">Portfolio</a></li>
-            <li class="menu--item">
-                <a href="#">Services</a>
-                <ul class="submenu">
-                    <li class="submenu--item"><a href="#">submenu 1</a></li>
-                    <li class="submenu--item"><a href="#">submenu 2</a></li>
-                    <li class="submenu--item">
-                        <a href="#">submenu 3</a>
-                        <ul class="submenu2">
-                            <li class="submenu2--item"><a href="#">submenu 1</a></li>
-                            <li class="submenu2--item"><a href="#">submenu 2</a></li>
-                            <li class="submenu2--item"><a href="#">submenu 3</a></li>
-                        </ul>
+<ul class="list">
+    <li class="list-item"><a href="#" class="list-item-link">Danmark</a></li>
+    <li class="list-item">
+        <a href="#" class="list-item-link">Finland</a>
+        <ul class="list sub-list">
+            <li class="sub-list-item"><a href="" class="sub-list-item-link">History</a></li>
+            <li class="sub-list-item">
+                <a href="#" class="sub-list-item-link">Architecture</a>
+                <ul class="list sub-sub-list">
+                    <li class="sub-sub-list-item">
+                        <a href="#" class="sub-list-item-link">Old</a>
                     </li>
-                    <li class="submenu--item"><a href="#">submenu 4</a></li>
+                    <li class="sub-sub-list-item">
+                        <a href="#" class="sub-list-item-link">Modern</a>
+                    </li>
                 </ul>
             </li>
-            <li class="menu--item"><a href="#">Staff</a></li>
-            <li class="menu--item">
-                <a href="#">Articles</a>
-                <ul class="submenu">
-                    <li class="submenu--item">
-                        <a href="#">submenu 1</a>
-                        <ul class="submenu2">
-                            <li class="submenu2--item"><a href="#">submenu 1</a></li>
-                            <li class="submenu2--item"><a href="#">submenu 2</a></li>
-                            <li class="submenu2--item"><a href="#">submenu 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="submenu--item"><a href="#">submenu 2</a></li>
-                    <li class="submenu--item"><a href="#">submenu 3</a></li>
-                    <li class="submenu--item"><a href="#">submenu 4</a></li>
-                </ul>
+            <li class="sub-list-item"><a href="#" class="sub-list-item-link">Food</a></li>
+        </ul>
+    </li>
+    <li class="list-item"><a href="#" class="list-item-link">Netherlands</a></li>
+    <li class="list-item"><a href="#" class="list-item-link">Norway</a></li>
+    <li class="list-item"><a href="#" class="list-item-link">Sweden</a></li>
+</ul>
+
+<div class="select-container">
+    <select class="selectBox-inline" name="country">
+        <option class="selectBox-options-bottom" value="danmark">Danmark</option>
+        <option class="selectBox-options-bottom" value="finland">Finland</option>
+        <option class="selectBox-options-bottom" value="netherlands" selected="selected">Netherlands</option>
+        <option class="selectBox-options-bottom" value="norway">Norway</option>
+        <option class="selectBox-options-bottom" value="sweden" disabled="disabled">Sweden</option>
+    </select>
+</div>
+
+<div class="inputs-container">
+    <label for="" class="input-label">
+        checkbox 1
+        <span class="checkbox-wrapper">
+                    <input type="checkbox" name="light">
+                </span>
+    </label>
+
+    <label for="" class="input-label">
+        checkbox 2
+        <span class="checkbox-wrapper">
+                    <input type="checkbox"  name="standard" checked>
+                </span>
+    </label>
+
+    <label for="" class="input-label">
+        checkbox 3
+        <span class="checkbox-wrapper">
+                    <input type="checkbox"  name="dark">
+                </span>
+    </label>
+</div>
+
+<div class="jcarousel-wrapper">
+    <h1>Photos of Sweden</h1>
+    <div class="jcarousel" data-jcarousel="true">
+        <ul class="jcarousel-list">
+            <li class="jcarousel-item">
+                <img src="img/stockholm_yachts.jpg" alt="stockholm yachts">
             </li>
-            <li class="menu--item"><a href="#">Contact</a></li>
+            <li class="jcarousel-item">
+                <img src="img/sweden_nature.jpg" alt="sweden nature">
+            </li>
+            <li class="jcarousel-item">
+                <img src="img/stockholm.jpg" alt="stockholm view">
+            </li>
+            <li class="jcarousel-item">
+                <img src="img/malmo.jpg" alt="malmo">
+            </li>
+            <li class="jcarousel-item">
+                <img src="img/stockholm_archipelago.jpg" alt="stockholm archipelago">
+            </li>
         </ul>
     </div>
-</nav>
-<main>
-    <div class="container">
-        <section class="hi owl-carousel">
-            <div class="hi--item item">
-                <a href="#"><img src="img/img1.jpg" alt="img"></a>
-                <h2>Taste & Sounds from Thailand</h2>
-                <p>We've made some small changes to BlazRobar.com...</p>
-            </div>
-            <div class="hi--item item">
-                <a href="#"><img src="img/img2.jpg" alt="img"></a>
-                <h2>BlazRobar.com is awesome for PSD</h2>
-                <p>We've made some small changes to BlazRobar.com...</p>
-            </div>
-            <div class="hi--item item">
-                <a href="#"><img src="img/img3.jpg" alt="img"></a>
-                <h2>Nice Looking Mountains Ah?</h2>
-                <p>We've made some small changes to BlazRobar.com...</p>
-            </div>
-        </section>
-
-        <form>
-            <label>
-                <span>Выберите один или несколько вариантов:</span>
-                <select id="variants" name="variants">
-                    <option value="variant1">Вариант 1</option>
-                    <option value="variant2">Вариант 2</option>
-                    <option value="variant3">Вариант 3</option>
-                    <option value="variant4">Вариант 4</option>
-                    <option value="variant5">Вариант 5</option>
-                </select>
-            </label>
-
-            <br><br><br>
-
-            <label for="check1">
-                Этот checkbox с помощью плагина «jQuery Form Styler»
-            </label>
-            <input type="checkbox" id="check1" checked>
-
-            <br><br><br>
-
-            <input type="checkbox" id="check2">
-            <label for="check2" class="css-checkbox">
-                Этот checkbox с помощью CSS
-            </label>
-
-        </form>
-    </div>
-</main>
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="js/owl.carousel.js"></script>
-<script src="js/jquery.formstyler.js"></script>
-<script src="js/script.js"></script>
-
+    <p class="photo-credits">Photos of Sweden</p>
+    <a href="#" class="jcarousel-control-prev" data-jcarouselcontrol="true">&larr;</a>
+    <a href="#" class="jcarousel-control-next" data-jcarouselcontrol="true">&rarr;</a>
+    <p class="jcarousel-pagination" data-jcarouselpagination="true">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+    </p>
+</div>
 </body>
 </html>
