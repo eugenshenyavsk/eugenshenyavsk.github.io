@@ -1,28 +1,49 @@
-.timer {
-    text-align: center;
-    max-width: 500px;
-    background-color: #f0f0f0;
-    padding: 25px;
-    margin: auto;
-    border-radius: 5px;
+body {
+    background-color: lightgrey;
 }
-#display {
-    border: 25px solid #fff;
-    border-radius: 15px;
-    font-size: 83px;
-    font-family: lucida console;
-    color: dimgrey;
+
+.wrap {
+    margin: 0 auto;
+    width: 700px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
 }
-#msec {
+
+
+button {
+    width: 250px;
+    height: 70px;
+    border-radius: 20px;
+    color: white;
+    margin: 50px 10px;
     font-size: 25px;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, .3), inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
 }
-.buttons {
-    padding-top: 20px;
+
+
+#count {
+    font-size: 100px;
+    width: 530px;
 }
-.buttons button {
-    width: 100%;
-    text-transform: uppercase;
+
+
+#stop {
+    background-color: red;
 }
-#pause {
-    display: none;
+
+
+#start {
+    background-color: green;
 }
