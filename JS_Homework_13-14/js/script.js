@@ -51,7 +51,6 @@ function Score(){
     score = 0;
     clearForm("quiz");
 
-
 }
 function clearForm(name) {
     var f = document.forms[name];
