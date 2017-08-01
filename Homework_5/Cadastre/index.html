@@ -1,48 +1,77 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Homework5</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <title>5.1</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 </head>
-<body>
-<main>
-    <div class="header">
-        <ul>
-            <li><a href="#">Meu YouBike</a></li>
-            <li><a href="#">Vender</a></li>
-            <li><a href="#">Forum</a></li>
-            <li><a href="#">Contato</a></li>
-            <li class="border"><a href="#">Ajuda</a></li>
-            <li class="flag"><img src="img/flag.png" alt="flag"></li>
-            <li class="column">Minhas Ofertas</li>
-            <li class="column">Ola!<a href="#">Entrar</a> ou <a href="#">Cadastre-se</a></li>
-        </ul>
-    </div>
-    <div class="central_panel">
-        <h1>Cadastre-se</h1>
-        <form class="login" action="https://www.facebook.com" target="_blank">
-            <input type="submit" value="Перейти">
-        </form>
-        <h4>OU</h4>
-        <form action="#" class="account">
-            <input type="text" name="first_name" placeholder="First Name" required>
-            <input type="text" name="last_name" placeholder="Last Name" required>
-            <input type="email" name="email" placeholder="Email Adress" required>
-            <div>
-                <input type="password" name="password" placeholder="Choose Password" required>
-                <input type="password" name="password" placeholder="Password Confirm" required>
+<body class="one">
+<nav>
+    <ul class="right-menu">
+        <li class="minhas">
+            <img src="img/flag.png" alt="">
+            <a href="">Minhas Ofertas</a>
+        </li>
+        <li class="entar">
+            Ola! <a href=""> Entrar</a> ou <a href=""> Cadastre-se</a>
+        </li>
+    </ul>
+    <ul class="left-menu">
+        <li>
+            <a href="">Meu YouBike</a>
+            <a href="">Vender</a>
+            <a href="">Forum</a>
+            <a href="">Contato</a>
+            <a href="">Ajuda</a>
+        </li>
+    </ul>
+</nav>
+<div class="body">
+    <div class="container">
+        <h3>Cadastre-se</h3>
+        <div class="form">
+            <div class="facebook">
+                <button>
+						<span class="logo">
+							<img src="img/f.png" alt="">
+						</span>
+                    <b>Log In</b> with <b>Facebook</b>
+                    <span class="symbol">
+								&#62;
+						</span>
+                </button>
+                <div class="ou">OU</div>
             </div>
-            <div>
-                <input type="checkbox" id="update">
-                <label for="update">Send me Youbike updates and tips</label>
+            <form action="#">
+                <fieldset>
+                    <div class="inset">
+                        <input type="text" name="First Name" placeholder="First Name" id="">
+                    </div>
+                    <div class="inset">
+                        <input type="text" name="Last Name"  placeholder="Last Name" id="">
+                    </div>
+                    <div class="inset">
+                        <input type="email" name="Email Address" placeholder="Email Address" id="">
+                    </div>
+                    <div class="inset">
+                        <input type="password" name="Choose Password" placeholder="Choose Password" id="">
+                    </div>
+                    <div class="inset">
+                        <input type="password" name="Password Confirm" placeholder="Password Confirm" id="">
+                    </div>
+                    <input type="checkbox" placeholder="Youbike and tips" id="send-youbike">
+                    <label for="send-youbike">Send me Youbike updates and tips</label>
+                </fieldset>
+            </form>
+            <div class="create">
+                <button>Create my Account</button>
             </div>
-            <input class="create_bottom" type="submit" value="Create my Account">
-        </form>
-        <div class="privacy">
-            <p>By clicking the button above, you agree to the Terms of Service Xiew our Privacy Policy.</p>
+            <div class="footer">
+                <p>By clicking the button above, you agree to the Terms of Service</p>
+                <p>Xiew our Privacy Policy.</p>
+            </div>
         </div>
     </div>
-</main>>
+</div>
 </body>
+</html>
