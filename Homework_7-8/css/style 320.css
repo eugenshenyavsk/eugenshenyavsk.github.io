@@ -1,0 +1,200 @@
+@media (min-width: 320px) and (max-width: 479px){
+    .container {
+        min-width: 260px;
+        max-width: 419px;
+    }
+    .wrapper__img {
+        height: 517px;
+    }
+    .wrapper__gradient {
+        height: 599px;
+    }
+    .wrapper__news {
+        height: 787px;
+    }
+    .wrapper__company {
+        height: 422px;
+    }
+    .wrapper__gray {
+        height: 517px;
+        display: none;
+    }
+    .wrapper__footer {
+        height: 200px;
+    }
+
+    .navbar--top {
+        margin-top: 70px;
+        position: relative;
+        min-width: 260px;
+        max-width: 419px;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+    .menu__top {
+        position: absolute;
+        display: block;
+        top:95px;
+        left: 20%;
+        width: 244px;
+        border-radius: 8px;
+        visibility: hidden;
+    }
+    .nav__link--initial {
+        visibility: visible;
+        border-bottom: 2px solid #edbfff;
+    }
+    .menu__top li {
+        padding: 13px;
+        border-bottom: 2px solid transparent;
+        height: 43px;
+        text-align: center;
+    }
+    .menu__top:hover {
+        visibility: visible;
+        background-color: RGBA(63,51,71,.9);
+    }
+    .menu__top:hover li:first-child {
+        border-radius: 8px 8px 0 0;
+        border-top: 1px solid #222222;
+    }
+    .menu__top:hover li:last-child {
+        border-radius:  0 0 8px 8px;
+    }
+    .menu__top:hover li {
+        border-bottom: 1px solid #303030;
+        border-top: 1px solid #484746;
+        border-right: 1px solid #222222;
+        border-left: 1px solid #222222;
+    }
+    /*.menu__top:hover .nav__link--initial{*/
+    /*border-bottom: transparent;*/
+    /*}*/
+    .menu__top li:hover {
+        background-color: #2d2533;
+        border-bottom: 2px solid #edbfff;
+    }
+    .menu__top li:first-child:hover {
+        border-radius: 8px 8px 0 0;
+        border-bottom: 2px solid #d8cfe0;
+    }
+    .menu__top li:last-child:hover {
+        border-radius:  0 0 8px 8px;
+        border-bottom: 2px solid #d8cfe0;
+    }
+    .wrap__presentation {
+        height: 60px;
+        background-color: transparent;
+        margin-top: 191px;
+    }
+    .presentation {
+        margin: 0 auto;
+        max-width: 479px;
+        min-width: 315px;
+    }
+    .section__presentation {
+        max-width: 419px;
+        min-width: 228px;
+    }
+    .slider_l img,
+    .slider_r img{
+        width: 20px;
+        height: auto;
+    }
+    .article__presentation {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .article__presentation__img {
+        display: none;
+    }
+    .article__presentation h1{
+        font-size: 36px;
+    }
+    .article__presentation h2{
+        font-size: 18px;
+        overflow: hidden;
+    }
+    .article__presentation p{
+        display: none;
+    }
+    .radio__presentation {
+        margin-top: 20px;
+    }
+    .radio__presentation img {
+        margin-left: 40%
+    }
+    .section__gradient{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-content: center ;
+    }
+    .section__item {
+        width: 95%;
+        height: 30%;
+    }
+    .sprite {
+        margin: 8px auto;
+    }
+    .gradient__content {
+        width: 80%;
+    }
+    .gradient__content h1 {
+        font-size: 24px;
+    }
+    .section__news {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .articles__left {
+        width: 95%;
+        height: 40%;
+    }
+    .articles__right {
+        width: 77%;
+        height: 35%;
+    }
+    .articles__left__header h1 {
+        margin-left: 14px;
+        font-size: 24px;
+    }
+    .starts {
+        display:block ;
+        font-size: 24px;
+    }
+    .articles__left p {
+        height: 53%;
+    }
+    .section__company {
+        display: flex;
+        flex-flow:row wrap;
+        justify-content: space-between;
+    }
+    .company__first,
+    .company__second {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-flow:column wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .section__footer {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .navbar--down {
+        display: none;
+    }
+    .designed {
+        margin-top: 2rem;
+    }
+
+}

@@ -1,110 +1,80 @@
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    .substrate--header {
-        padding-bottom: 100px;
+@media (min-width: 768px) and (max-width: 959px) {
+    .container {
+        min-width: 708px;
+        max-width: 899px;
     }
-    .substrate--update {
-        box-shadow: none;
+    .wrapper__img {
+        height: 798px;
     }
-    .substrate--news {
+    .wrapper__gradient {
+        height: 342px;
+    }
+    .wrapper__news {
+        height: 486px;
+    }
+    .wrapper__company {
+        height: 120px;
+    }
+    .wrapper__gray {
+        height: 396px;
+    }
+    .wrapper__footer {
+        height: 200px;
+    }
+    .navbar--top {
         display: block;
-        padding-bottom: 85px;
+        min-width: 708px;
+        max-width: 899px;
     }
+    .logo {
+        margin-left: 0;
+    }
+    .menu {
+        margin-top: 38px;
+    }
+    .wrap__presentation {
+        margin-top: 80px;
+    }
+    .presentation {
+        margin: 0 auto;
+        max-width: 959px;
+        min-width: 708px;
+    }
+    .section__presentation {
+        min-width: 708px;
+        max-width: 899px;
+    }
+    .article__presentation {
+        width: 70%;
+    }
+    .article__presentation__img {
 
-    .slide__heading {
-        font-size: 26px;
+        margin-right: 3%;
     }
-    .slider {
-        background-color: rgba(0, 0, 0, 0.2);
-        min-height: 245px;
-        max-height: 245px;
-        margin-top: 27px;
+    .article__presentation h1{
+        font-size: 48px;
     }
-    .slider__control--next {
-        top: 105px;
+    .article__presentation h2{
+        font-size: 24px;
     }
-
-    .slider__control--prev {
-        top: 105px;
+    .article__presentation p{
+        font-size: 16px;
+        line-height: 30px;
     }
-
-    .slider__bullets {
-        position: absolute;
-        top: 100%;
-        right: 40%;
-        margin-top: 118px;
+    .radio__presentation {
+        margin-top: 37px;
     }
-
-    .slide__heading {
-        text-align: left;
-        padding-left: 7.29167%;
-        padding-top: 90px;
-    }
-
-    .slide__aditional {
-        margin-left: 7.29167%;
-    }
-
-    .slide__image {
+    .section__footer {
         display: block;
-        max-width: 190px;
-        position: absolute;
-        top: -10px;
-        right: 7.29167%;
+        border: 1px solid transparent;
     }
-
-    .slide__ico--play {
-        display: inline-block;
+    .menu--down {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 47px;
+        margin-bottom: 40px;
     }
-
-    .bullets__item {
-        margin-left: 5px;
-    }
-
-    .slide-content {
-        margin-left: 40px;
-    }
-
-    .slide-content__body {
-        padding: 25px 25px 30px 30px;
-    }
-
-    .slide-content__head {
-        font-size: 30px;
-        padding-bottom: 10px;
-        padding-top: 10px;
-    }
-
-    .slide-content__head--color {
-        display: inline;
-    }
-
-    .slide-content__text {
-        min-width: 69.79167%;
-    }
-
-    .pingbuller__bullets {
-        margin-top: 25px;
-    }
-
-    .recent-updates__item {
-        margin-left: 12.5%;
-    }
-
-    .recent-updates__text {
-        max-width: 62.5%;
-    }
-
-    .recent-updates__link {
-        margin-right: 12.5%;
-    }
-
-    .brands-logo {
-        max-width: 400px;
-        padding-right: 6.25%;
-        padding-left: 6.25%;
-    }
-
-    .footer__menu {
-        display: block;
+    .designed {
+        text-align: right;
     }
 }
