@@ -1,66 +1,94 @@
-(function () {
-    'use strict';
+'use strict';
 
-    var test = {
-        data: {
-            title: 'Тест по какой-то теме',
-            questions: [
-                {
-                    title: 'Вопрос #1',
-                    answers: ['Вариант овтета 1', 'Вариант овтета 2', 'Вариант овтета 3']
-                },
-                {
-                    title: 'Вопрос #2',
-                    answers: ['Вариант овтета 1', 'Вариант овтета 2', 'Вариант овтета 3', 'Вариант овтета 4']
-                },
-                {
-                    title: 'Вопрос #3',
-                    answers: ['Вариант овтета 1', 'Вариант овтета 2']
-                }
-            ]
-        },
-        generateHtml: function () {
-            var questionsArr = [];
-            for (var i = 0, length = this.data.questions.length; i < length; i++) {
-                var questionTag = createQuestionTag(this.data.questions[i].title);
-                var labelTag = createLabelTag(this.data.questions[i].title, this.data.questions[i].answers);
-                var formTag = joinQuestionToLabel(questionTag, labelTag);
-                questionsArr.push(formTag);
+var test;
+test = {
+    data: {
+        title: 'Тест по программированию',
+        questions: [
+            {
+                title: 'Вопрос № 1',
+                answers: ['Вариант ответа № 1 ', 'Вариант ответа № 2', 'Вариант ответа № 3']
+            },
+            {
+                title: 'Вопрос № 2',
+                answers: ['Вариант ответа № 1', 'Вариант ответа № 2', 'Вариант ответа № 3', 'Вариант ответа № 4']
+            },
+            {
+                title: 'Вопрос № 3',
+                answers: ['Вариант ответа № 1', 'Вариант ответа № 2']
+            },
+            {
+                title: 'Вопрос № 4',
+                answers: ['Вариант ответа № 1', 'Вариант ответа № 2', 'Вариант ответа № 3', 'Вариант ответа № 4', 'Вариант ответа № 5']
             }
-            var form = createForm(questionsArr);
-            document.body.innerHTML = form;
-            function createForm(arr) {
-                var code = arr[0];
-                var button = createButton('Проверить  результат');
-                for (var i = 1, length = arr.length; i < length; i++) {
-                    code += arr[i];
-                }
-                return '<form action="" method="POST">' + code + button + '</form>';
+        ]
+    },
+    createMyHeader: function () {
+        var h1 = document.createElement('h1');
+        h1.className = "header";
+        //h1.innerHTML = this.data.title;
+        h1.appendChild(document.createTextNode(this.data.title));
+        return h1;
+    },
+    createMyList: function () {
+        var ol = document.createElement('ol');
+        ol.className = 'questList';
+        for (var keyQ in this.data.questions) {
+            var ulAnswer = document.createElement('ul');
+            ulAnswer.className = 'ansList';
+            for (var keyA in this.data.questions[keyQ].answers) {
+                var myId = 'quest' +keyQ+ '__' +'ans' +keyA;
+                var textLabel = this.data.questions[keyQ].answers[keyA];
+                var input = document.createElement('input');
+                input.setAttribute('type','checkbox');
+                input.className = "inputCheck";
+                var label = document.createElement('label');
+                label.className = "myLabel";
+                var ansLi = document.createElement('li');
+                ansLi.className = 'ansLi';
+                input.setAttribute( 'id', myId );
+                label.setAttribute( 'for', myId );
+                //label.innerHTML = textLabel;
+                label.appendChild(document.createTextNode(textLabel));
+                ansLi.appendChild(input);
+                ansLi.appendChild(label);
+                ulAnswer.appendChild(ansLi);
             }
-            function joinQuestionToLabel(question, label) {
-                return question + label;
-            }
-            function createTitleTag(text) {
-                var div = document.createElement('div');
-                div.innerText = text;
-                return div;
-            }
-            function createQuestionTag(question) {
-                return '<p class="question">' + question + '</p>';
-            }
-            function createLabelTag(questionName, arr) {
-                var newArr = '<input type="checkbox"' + questionName + '0"><span>' + arr[0] + '</span><br>';
-                var code;
-                for (var i = 1, length = arr.length; i < length; i++) {
-                    code = '<input type="checkbox"' + questionName + i + '"><span>' + arr[i] + '</span><br>';
-                    newArr += code;
-                }
-                return '<label>' + newArr + '</label>';
-            }
-            function createButton(text) {
-                return '<button type="submit" style="display: block; margin-top: 50px;">' + text + '</button>';
-            }
+            var questionLi = document.createElement('li');
+            questionLi.className = 'questLi';
+            //questionLi.innerHTML = this.data.questions[keyQ].title;
+            questionLi.appendChild(document.createTextNode(this.data.questions[keyQ].title));
+            questionLi.appendChild(ulAnswer);
+            ol.appendChild(questionLi);
         }
-    };
-    test.generateHtml();
-})();
+        return ol;
+    }
+
+};
+
+var divContainer = document.createElement('div');
+divContainer.className = "container";
+var divRowHeader = document.createElement('div');
+divRowHeader.className = "row row--header";
+var divRowForm = document.createElement('div');
+divRowForm.className = "row row--header";
+var myForm = document.createElement('form');
+myForm.setAttribute('action','#');
+myForm.className = "myForm";
+
+
+
+var divWrapBat = document.createElement('div');
+divWrapBat.className = "wrapBat";
+var button = document.createElement('input');
+button.setAttribute('type','button');
+button.className = "batCheck btn btn-primary btn-lg";
+button.setAttribute('value','Проверить мои результаты');
+var parentElem = document.body;
+parentElem.appendChild(divContainer);
+divContainer.appendChild(divRowForm);
+divRowForm.appendChild(myForm);
+myForm.appendChild(test.createMyHeader());
+myForm.appendChild(test.createMyList());
+myForm.appendChild(divWrapBat);
+divWrapBat.appendChild(button);
