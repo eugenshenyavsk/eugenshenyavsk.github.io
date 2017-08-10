@@ -1,0 +1,116 @@
+body {
+
+}
+
+.header {
+
+}
+.form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 1rem;
+
+}
+.questList {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2rem;
+    width: 90%;
+}
+.container {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.wrapT {
+    width: 45%;
+    /*outline: 1px solid blue;*/
+}
+.row {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.myForm {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 1rem;
+}
+.questList li {
+    margin-left: 2rem;
+}
+.questList {
+    list-style-type: decimal;
+    font-size: 2rem;
+    margin: 2rem;
+}
+.ansList {
+    margin: 2rem;
+}
+.inputCheck, .inputRadio  {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.myLabel {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+.inputCheck,.myLabel {
+    cursor: pointer;
+}
+.wrapBatOne,
+.wrapBatMulti {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+}
+.batCheck {
+    padding: 1rem 3rem;
+    font-size: 2rem;
+}
+/*************************************************/
+#rightAns{
+    text-align: center;
+    padding: 2rem;
+    color: green;
+}
+#formModal {
+    width: 60%;
+    border: 1px solid black;
+    background-color: white ;
+    vertical-align: middle;
+}
+
+.wrapModalHide {
+    display: none;
+}
+.wrapModalShow {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.25);
+}
+
