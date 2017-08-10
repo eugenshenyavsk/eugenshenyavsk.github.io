@@ -1,9 +1,7 @@
 'use strict';
-//карусель плагин в slider.js
+
 $(function () {
 
-//////////////////////////////////////////////////////////////
-    //объект для единственного  выбора ответа
     var testOne = {
         data: {
             title: 'Тест по программированию',
@@ -61,7 +59,7 @@ $(function () {
             ]
         }
     };
-    //объект для множественного выбора ответа
+
     var testMulti = {
         data: {
             title: 'Тест по геграфии',
@@ -119,24 +117,18 @@ $(function () {
             ]
         }
     };
-///////////////////////////////////////////////////////////////////////////////////////////
-    //сериализуем обьекты
+
     var serialOne = JSON.stringify(testOne);
     var serialMul = JSON.stringify(testMulti);
-//запишем его в хранилище по ключам "myKeyOne" и "myKeyMul"
     localStorage.setItem("myKeyOne", serialOne);
     localStorage.setItem("myKeyMul", serialMul);
-//спарсим их обратно в объекты
     var returnOne = JSON.parse(localStorage.getItem("myKeyOne"));
     var returnMul = JSON.parse(localStorage.getItem("myKeyMul"));
-///////////////////////////////////////////////////////////////////////////////////////////////////
-    //Шаблонизация радио
     var compilOne = _.template($('#testO').html());
     var contentOne = compilOne({'ldata':returnOne});
     $('.wrapOne').append(contentOne);
 
-/////////////////////////////////////////////////////////////////////////////////////
-//Обработка кнопки радио
+
     var buttExamOne = $('.container').find('#myButtOne');
     var wrapModal= document.getElementById('wrapModal');
     var h1Modal=document.getElementById('rightAns');
@@ -158,13 +150,11 @@ $(function () {
         h1Modal.innerText='Вы выбрали: '+checkedTrue+' из '+totalTrue +' правилных ответов';
         wrapModal.setAttribute('class','wrapModalShow');
     });
-////////////////////////////////////////////////////////////////////////////////
-//Шаблонизация чекбоксов
+
     var compilMul = _.template($('#testMulti').html());
     var contentMul = compilMul({'Mdata':returnMul});
     $('.wrapMulti').append(contentMul);
-/////////////////////////////////////////////////////////////////////////////
-    //обработка кнопки чекбокса
+
     var buttExamMul = $('.container').find('#myButtMulti');
     buttExamMul.on('click',function () {
         var inputExamedM = $('.container').find('.inputCheck');
@@ -188,8 +178,7 @@ $(function () {
         h1Modal.innerText='Вы выбрали: ' + checkedTrueM + ' из '+ totalTrueM +' правилных ответов '+' ,неправилных ответов: '+ checkedFalseM ;
         wrapModal.setAttribute('class','wrapModalShow');
     });
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    //Обработка кнопки модального окна
+
     var butModal= document.getElementById('butModal');
     butModal.addEventListener('click',function () {
         wrapModal.setAttribute('class','wrapModalHide');
