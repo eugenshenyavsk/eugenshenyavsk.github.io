@@ -1,6 +1,3 @@
-/**
- * Created by Shishkov on 15.06.2017.
- */
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
     concat = require('gulp-concat'),
