@@ -53,18 +53,18 @@ body {
 }
 .questList {
     list-style-type: decimal;
-    font-size: 2rem;
-    margin: 2rem;
+    font-size: 1rem;
+    margin: 1rem;
 }
 .ansList {
     margin: 2rem;
 }
 .inputCheck, .inputRadio  {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1rem;
+    height: 1rem;
 }
 .myLabel {
-    font-size: 2rem;
+    font-size: 1rem;
     margin-left: 1rem;
 }
 .inputCheck,.myLabel {
@@ -81,12 +81,12 @@ body {
 }
 .batCheck {
     padding: 1rem 3rem;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 /*************************************************/
 #rightAns{
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     color: green;
 }
 #formModal {
