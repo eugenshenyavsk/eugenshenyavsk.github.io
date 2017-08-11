@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hw_21_22</title>
+    <link rel="stylesheet" href="css/dist/main.min.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="wrapT">
+        <h1>Выбор одного значения</h1>
+        <div class="wrapOne">
+            <script type="text/template" id="testO">
+                <form action="#">
+                    <h1><%=ldata.data.title%></h1>
+                    <ol class="questList" >
+                        <% for(var i=0;i < ldata.data.questions.length;i++){ %>
+                        <li class="questLi"><%= ldata.data.questions[i].title %>
+                            <ul class="ansList">
+                                <% for(var j=0;j < ldata.data.questions[i].answers.length;j++){ %>
+                                <li class="ansLi">
+                                    <input name="<%='nRadio'+i%>" type="radio" id="<%='q'+i+'a'+j%>" class="inputRadio" value="<%= ldata.data.questions[i].answers[j].flag %>">
+                                    <label for="<%='q'+i+'a'+j%>" class="myLabel">
+                                        <%= ldata.data.questions[i].answers[j].name %>
+                                    </label>
+                                </li>
+                                <%};%>
+                            </ul>
+                        </li>
+                        <%};%>
+                    </ol>
+                    <div class="wrapBatOne">
+                        <input id="myButtOne" type="button" class="batCheck btn btn-primary" value="Проверить мои результаты">
+                    </div>
+                </form>
+            </script>
+        </div>
+    </div>
+    <div class="wrapT">
+        <h1>Выбор нескольких значений</h1>
+        <div class="wrapMulti">
+            <script type="text/template" id="testMulti">
+                <form action="#">
+                    <h1><%= Mdata.data.title%></h1>
+                    <ol class="questList" >
+                        <% for(var i=0;i < Mdata.data.questions.length;i++){ %>
+                        <li class="questLi"><%= Mdata.data.questions[i].title %>
+                            <ul class="ansList">
+                                <% for(var j=0;j < Mdata.data.questions[i].answers.length;j++){ %>
+                                <li class="ansLi">
+                                    <input  type="checkbox" id="<%='mq'+i+'a'+j%>" class="inputCheck" value="<%= Mdata.data.questions[i].answers[j].flag %>">
+                                    <label for="<%='mq'+i+'a'+j%>" class="myLabel"><%= Mdata.data.questions[i].answers[j].name %></label>
+                                </li>
+                                <%};%>
+                            </ul>
+                        </li>
+                        <%};%>
+                    </ol>
+                    <div class="wrapBatMulti">
+                        <input id="myButtMulti" type="button" class="batCheck btn btn-primary" value="Проверить ">
+                    </div>
+                </form>
+            </script>
+        </div>
+    </div>
+</div>
+<div id="wrapModal" class="wrapModalHide">fff
+    <form id="formModal">
+
+        <h3 id="rightAns"></h3>
+
+        <input type="button" value="Ок" id="butModal" class="batCheck btn btn-primary ">
+
+    </form>
+</div>
+<script src="js/dist/jquery-3.2.1.min.js"></script>
+<script src="js/dist/lodash.js"></script>
+<script src="js/dist/main.min.js"></script>
+<!--<script src="js/src/script_1.js"></script>-->
+
+</body>
+</html>
+
