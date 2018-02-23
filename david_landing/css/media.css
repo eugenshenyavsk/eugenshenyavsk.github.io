@@ -1,0 +1,223 @@
+@media only screen and (max-width : 1400px) {
+
+	.sl{
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+
+	.main-header{
+		min-height: 80vh;
+	}
+
+	.button{
+		padding: 15px 20px;
+	}
+
+	.main-header{
+		grid-template-columns: 1.2fr 1fr;
+	}
+
+}
+
+@media only screen and (max-width : 1200px) {
+
+	.main-header{
+		min-height: 60vh;
+	}
+
+	.button{
+		margin-bottom: 20px;
+	}
+
+	.header{
+		padding-left: 80px;
+	}
+
+	.main-header{
+		grid-template-columns: 1.2fr 1fr;
+	}
+
+}
+
+@media only screen and (max-width : 1024px) {
+
+	.about-content{
+		padding-left: 40px;
+	}
+
+	.about-program{
+		padding-left: 40px;
+	}
+
+	.main-header{
+		grid-template-columns: 1.2fr 1fr;
+	}
+
+}
+
+@media (max-width : 992px) {
+
+	.header{
+		padding-left: 50px;
+	}
+
+	.button{
+		margin-left: 0px;
+	}
+
+	.button-green{
+		margin-bottom: 20px;
+	}
+
+	.main-header{
+		min-height: 70vh;
+	}
+
+	.main-header{
+		grid-template-columns: 1.2fr 0.9fr;
+	}
+
+
+}
+
+@media (max-width : 830px){
+	.header-buttons{
+		display: grid;
+	}
+
+	.header-title{
+		margin-bottom: 20px;
+	}
+
+	.header-text{
+		margin-bottom: 20px;
+	}
+
+	.button-green{
+		margin-bottom: 20px;
+	}
+
+	.main-header{
+		min-height: 80vh;
+	}
+
+	.button{
+		margin-bottom: 20px;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	.main-menu{
+		display: block;
+	}
+
+	.menu{
+		padding: 0px 20px 20px 20px;
+	}
+
+	.main-header{
+		min-height: 70vh;
+	}
+
+	.header{
+		padding-left: 20px;
+	}
+
+	.button-green{
+		margin-bottom: 20px;
+	}
+
+	.about-program{
+		display: block;
+
+	}
+
+	.about-content{
+		padding: 20px;
+	}
+
+	.about-program{
+		padding: 20px;
+	}
+
+	.sl{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.what-header{
+		padding-bottom: 20px;
+	}
+
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+
+@media only screen and (max-width : 480px) {
+
+	.main-header{
+	  display: grid;
+	  min-height: 70vh;
+	  background-position: left;
+	  grid-template-columns: 1fr;
+		padding-right: 20px;
+		padding-bottom: 20px;
+	}
+
+	.header-title{
+		text-align: center;
+	}
+
+	.what-header{
+		padding-bottom: 20px;
+	}
+
+	.what-content-text{
+		display: block;
+		margin: 20px;
+	}
+
+	.what-content-text ul{
+		margin: 0;
+	}
+
+	.adress{
+		grid-template-columns: 1fr;
+	}
+
+	.adress span{
+		padding-bottom: 20px
+	}
+
+	.footer-button{q
+		padding: 10px 40px
+	}
+}
+
+
+@media only screen and (max-width : 320px) {
+
+}
